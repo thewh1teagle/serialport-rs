@@ -1,4 +1,4 @@
-use serialport::{available_ports, SerialPortType};
+use serialport5::{available_ports, SerialPortType};
 
 fn main() {
     match available_ports() {

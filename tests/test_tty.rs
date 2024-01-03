@@ -8,8 +8,8 @@ use std::os::unix::prelude::*;
 use std::str;
 use std::time::Duration;
 
-use serialport::posix::SerialPortExt;
-use serialport::SerialPort;
+use serialport5::posix::SerialPortExt;
+use serialport5::SerialPort;
 
 #[test]
 fn test_ttyport_pair() {

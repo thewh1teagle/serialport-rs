@@ -21,7 +21,7 @@
 //!
 //! ```no_run
 //! use std::io::Read;
-//! use serialport::SerialPort;
+//! use serialport5::SerialPort;
 //! # fn main() -> serialport::Result<()> {
 //! let mut port = SerialPort::builder().baud_rate(115200).open("/dev/ttyUSB0")?;
 //! let mut buf = [0u8; 1024];

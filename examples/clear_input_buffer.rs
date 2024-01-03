@@ -42,7 +42,7 @@ use std::time::Duration;
 
 use clap::{App, AppSettings, Arg};
 
-use serialport::{ClearBuffer, SerialPort};
+use serialport5::{ClearBuffer, SerialPort};
 
 fn main() {
     let matches = App::new("Serialport Example - Clear Input Buffer")

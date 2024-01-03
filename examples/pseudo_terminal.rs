@@ -8,8 +8,8 @@ fn main() {
     use std::thread;
     use std::time;
 
-    use serialport::posix::SerialPortExt;
-    use serialport::SerialPort;
+    use serialport5::posix::SerialPortExt;
+    use serialport5::SerialPort;
 
     let (mut master, mut slave) =
         SerialPort::pair().expect("Unable to create pseudo-terminal pair");

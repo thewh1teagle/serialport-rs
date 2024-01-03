@@ -20,7 +20,7 @@ use std::str;
 
 use clap::{App, AppSettings, Arg};
 
-use serialport::{ClearBuffer, DataBits, FlowControl, Parity, SerialPort, StopBits};
+use serialport5::{ClearBuffer, DataBits, FlowControl, Parity, SerialPort, StopBits};
 
 fn main() {
     let matches = App::new("Serialport Example - Hardware Check")

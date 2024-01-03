@@ -1,7 +1,7 @@
 //! Tests for the `SerialPort` trait.
 #![cfg(unix)]
 
-use serialport::*;
+use serialport5::*;
 use std::time::Duration;
 
 #[test]

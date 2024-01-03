@@ -15,7 +15,7 @@ use std::io::{Read, Write};
 use std::time::Duration;
 use std::{io, thread};
 
-use serialport::SerialPort;
+use serialport5::SerialPort;
 
 fn main() {
     // Open the first serialport available.
