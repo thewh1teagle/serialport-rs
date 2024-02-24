@@ -314,7 +314,7 @@ cfg_if! {
                             );
                             let path = CStr::from_ptr(buf.as_ptr()).to_string_lossy();
                             vec.push(SerialPortInfo {
-                                port_name: path,
+                                port_name: path.to_string(),
                                 port_type: port_type(modem_service),
                             });
                         } else {
