@@ -1,6 +1,6 @@
 [package]
 name = "serialport5"
-version = "5.0.1"
+version = "5.0.2"
 authors = ["thewh1teagle"]
 categories = ["hardware-support"]
 edition = "2018"
