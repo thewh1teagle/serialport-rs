@@ -6,7 +6,7 @@ use std::time::Duration;
 
 #[test]
 fn test_listing_ports() {
-    let ports = serialport::available_ports().expect("No ports found!");
+    let ports = available_ports().expect("No ports found!");
     for p in ports {
         println!("{}", p.port_name);
     }
@@ -14,7 +14,7 @@ fn test_listing_ports() {
 
 #[test]
 fn test_opening_found_ports() {
-    let ports = serialport::available_ports().unwrap();
+    let ports = available_ports().unwrap();
     for p in ports {
         let _port = SerialPort::builder().open(p.port_name);
     }

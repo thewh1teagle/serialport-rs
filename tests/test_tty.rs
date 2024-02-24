@@ -1,7 +1,7 @@
 //! Tests for the `posix::SerialPort` struct.
 #![cfg(unix)]
 
-extern crate serialport;
+extern crate serialport5;
 
 use std::io::{Read, Write};
 use std::os::unix::prelude::*;

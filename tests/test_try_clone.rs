@@ -1,5 +1,5 @@
 #![cfg(unix)]
-extern crate serialport;
+extern crate serialport5;
 
 use serialport5::posix::SerialPortExt;
 use serialport5::SerialPort;

@@ -15,11 +15,11 @@ use std::io::{Read, Write};
 use std::time::Duration;
 use std::{io, thread};
 
-use serialport5::SerialPort;
+use serialport5::{available_ports, SerialPort};
 
 fn main() {
     // Open the first serialport available.
-    let port_name = &serialport::available_ports().expect("No serial port")[0].port_name;
+    let port_name = &available_ports().expect("No serial port")[0].port_name;
     let mut port = SerialPort::builder()
         .open(port_name)
         .expect("Failed to open serial port");
